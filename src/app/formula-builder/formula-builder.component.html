@@ -1,0 +1,7 @@
+<div class="container">
+    <textarea [(ngModel)]="inputText" class="textarea"></textarea>
+    <button (click)="submitText()" class="submit-button">Submit</button>
+    <div *ngIf="response" class="response" [ngClass]="{'valid-response': isValid, 'invalid-response': !isValid}">
+        {{ response }}
+    </div>
+</div>
